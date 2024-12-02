@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home-page">
+        <h1>Welcome to Quiz App!</h1>
+        <button id="start-infinite-quiz">Start Infinite Quiz</button>
+        <button id="start-one-vs-one">Play with Friends</button>
+    </div>
+
+    <!-- Infinite Quiz Section -->
+    <div id="infinite-quiz" class="quiz-container" style="display:none;">
+        <h2>Infinite Quiz</h2>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit-button" disabled>Submit</button>
+        <div id="result"></div>
+        <div id="timer" style="font-size: 20px; margin-top: 20px;">Time remaining: 30s</div>
+    </div>
+
+    <!-- 1v1 Quiz Section -->
+    <div id="one-vs-one" class="quiz-container" style="display:none;">
+        <h2>1v1 Quiz Mode</h2>
+        <input type="text" id="player-name" placeholder="Enter your name (optional)" />
+        <button id="generate-link">Generate Quiz Link</button>
+        <p id="generated-link"></p>
+        <div id="quiz-participant"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
